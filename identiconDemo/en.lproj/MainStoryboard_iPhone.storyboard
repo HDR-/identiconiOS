@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ep1-29-FVC">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iE-AV-JRy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="UjF-Kv-yU8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="identicon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8e-yq-dCd">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="n8b-x1-bbl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.42745101451873779" green="0.74117648601531982" blue="0.80000007152557373" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Try with any string:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-AL-sKh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your identicon is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQ2-No-V4V">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQ2-No-V4V" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3k8-Cy-f42"/>
+                            <constraint firstItem="0iE-AV-JRy" firstAttribute="top" secondItem="nQ2-No-V4V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7w9-JF-FFu"/>
+                            <constraint firstItem="E8e-yq-dCd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="DUo-cq-Yeo"/>
+                            <constraint firstItem="ep1-29-FVC" firstAttribute="top" secondItem="W2o-AL-sKh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OrL-Yr-iCZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ep1-29-FVC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="T31-Yl-kXR"/>
+                            <constraint firstItem="ep1-29-FVC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Vm9-ED-6ot"/>
+                            <constraint firstAttribute="bottom" secondItem="0iE-AV-JRy" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YMs-Wv-STE"/>
+                            <constraint firstItem="W2o-AL-sKh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aKd-nw-7ea"/>
+                            <constraint firstItem="ep1-29-FVC" firstAttribute="centerX" secondItem="E8e-yq-dCd" secondAttribute="centerX" type="default" id="n1j-9R-0Ss"/>
+                            <constraint firstItem="W2o-AL-sKh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="qCS-wb-MOT"/>
+                            <constraint firstItem="0iE-AV-JRy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zcB-u2-Ym8"/>
+                            <constraint firstAttribute="trailing" secondItem="0iE-AV-JRy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zyB-a3-RWj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="identiconImageView" destination="0iE-AV-JRy" id="qvI-u6-8C8"/>
+                        <outlet property="inputTextfield" destination="ep1-29-FVC" id="G0e-9m-xIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="identiconImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="inputTextfield" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
